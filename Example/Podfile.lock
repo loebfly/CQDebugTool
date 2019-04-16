@@ -1,0 +1,16 @@
+PODS:
+  - CQDebugTool (0.1.0)
+
+DEPENDENCIES:
+  - CQDebugTool (from `../`)
+
+EXTERNAL SOURCES:
+  CQDebugTool:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CQDebugTool: 4aadc6c4a074442807bd426b4aabd2c5b9d21160
+
+PODFILE CHECKSUM: 170093b27ff52e870cb1e9a72ccc5f59ed069e83
+
+COCOAPODS: 1.5.3
