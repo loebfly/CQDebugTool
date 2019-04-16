@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "CQDebug.h"
+#import "CQUrlContext.h"
 
 FOUNDATION_EXPORT double CQDebugToolVersionNumber;
 FOUNDATION_EXPORT const unsigned char CQDebugToolVersionString[];

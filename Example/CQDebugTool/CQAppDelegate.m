@@ -7,13 +7,66 @@
 //
 
 #import "CQAppDelegate.h"
+#import "CQDebugTool.h"
+#import "CQViewController.h"
+
+@interface CQAppDelegate ()<CQDebugToolDelegate>
+
+@end
 
 @implementation CQAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    //用标识决定window
+    BOOL isAppStoreChannel = NO;
+    if (!isAppStoreChannel) {
+        self.window = [[CQDebugTool debugInstance] debugWindow];
+        [CQDebugTool debugInstance].delegate = self;
+    } else {
+        self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    }
+    [[CQDebugTool debugInstance] appendRequestLog:@"ABCDEFGHIJKL"];
+    [CQDebugTool debugInstance].deallocMessageShow = YES;
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[CQViewController alloc] init]];
+    [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (NSInteger)numberOfCustomDebugCell {
+    return 1;
+}
+
+- (UITableViewCell *)customCellForRow:(NSInteger)row {
+    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"customCellID"];
+    cell.textLabel.text = @"自定义功能";
+    return cell;
+}
+
+- (void)didSelectCustomCell:(UITableViewCell *)customCell row:(NSInteger)row {
+    NSLog(@"%ld",row);
+}
+
+- (NSArray<CQUrlContext *> *)UrlContextDataForDevActionSheet {
+    NSMutableArray *data = [NSMutableArray arrayWithCapacity:0];
+    
+    CQUrlContext *devContext1 = [[CQUrlContext alloc] init];
+    devContext1.url = @"https://xxx";
+    devContext1.devTitle = @"测试环境";
+    [data addObject:devContext1];
+    
+    CQUrlContext *devContext2 = [[CQUrlContext alloc] init];
+    devContext2.url = @"https://xxx";
+    devContext2.devTitle = @"预生产环境";
+    [data addObject:devContext2];
+    
+    CQUrlContext *devContext3 = [[CQUrlContext alloc] init];
+    devContext3.url = @"https://xxx";
+    devContext3.devTitle = @"生产环境";
+    [data addObject:devContext3];
+
+    return data;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

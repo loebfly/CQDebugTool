@@ -5,25 +5,16 @@
 [![License](https://img.shields.io/cocoapods/l/CQDebugTool.svg?style=flat)](https://cocoapods.org/pods/CQDebugTool)
 [![Platform](https://img.shields.io/cocoapods/p/CQDebugTool.svg?style=flat)](https://cocoapods.org/pods/CQDebugTool)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
-## Installation
-
-CQDebugTool is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+## 安装
 
 ```ruby
 pod 'CQDebugTool'
 ```
 
-## Author
-
-luchunqing, 357406094@qq.com
-
-## License
-
-CQDebugTool is available under the MIT license. See the LICENSE file for more info.
+## 部分功能说明
+    1、显示FPS
+    2,显示ViewController的释放
+    3,日志显示，并支持日志搜索
+    4,支持自定义功能
+    5,Demo演示
+![Demo](./demo.gif)
