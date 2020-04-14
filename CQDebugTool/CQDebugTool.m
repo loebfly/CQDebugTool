@@ -7,8 +7,8 @@
 //
 
 #import "CQDebugTool.h"
-#import "CQWindow.h"
 #import "CQRequestLogViewController.h"
+#import "CQControlFloatingBall.h"
 
 @interface CQDebugTool ()
 
@@ -29,6 +29,12 @@
     return debug;
 }
 
+- (void)run {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [CQControlFloatingBall shareBall];
+    });
+}
+
 - (void)setDelegate:(id<CQDebugToolDelegate>)delegate {
     _delegate = delegate;
     if ([self.delegate respondsToSelector:@selector(UrlContextDataForDevActionSheet)]) {
@@ -38,13 +44,6 @@
 
 - (void)setCurrentUrlContext:(CQUrlContext *)currentUrlContext {
     _currentUrlContext = currentUrlContext;
-}
-
-- (UIWindow *)debugWindow {
-    if (!_debugWindow) {
-        _debugWindow = [[CQWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    }
-    return _debugWindow;
 }
 
 - (UINavigationController *)debugNav {

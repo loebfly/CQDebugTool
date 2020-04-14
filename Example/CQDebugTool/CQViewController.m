@@ -20,14 +20,14 @@
 	// Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
-    label.text = @"摇晃手机试试";
-    label.textAlignment = NSTextAlignmentCenter;
-    label.font = [UIFont systemFontOfSize:40];
-    label.textColor = [UIColor blackColor];
-    label.center = self.view.center;
-    label.bounds = CGRectMake(0, 0, self.view.bounds.size.width, 100);
-    [self.view addSubview:label];
+//    UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
+//    label.text = @"摇晃手机试试";
+//    label.textAlignment = NSTextAlignmentCenter;
+//    label.font = [UIFont systemFontOfSize:40];
+//    label.textColor = [UIColor blackColor];
+//    label.center = self.view.center;
+//    label.bounds = CGRectMake(0, 0, self.view.bounds.size.width, 100);
+//    [self.view addSubview:label];
     
     UIButton *button = [UIButton buttonWithType:(UIButtonTypeSystem)];
     button.backgroundColor = [UIColor lightGrayColor];

@@ -27,6 +27,8 @@
 
 + (instancetype)debugInstance;
 
+- (void)run;
+
 @property (nonatomic, weak) id<CQDebugToolDelegate> delegate;
 
 /* 当前的环境配置数据 */

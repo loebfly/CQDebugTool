@@ -10,7 +10,7 @@
 #endif
 #endif
 
-#import "CQDebug.h"
+#import "CQDebugTool.h"
 #import "CQUrlContext.h"
 
 FOUNDATION_EXPORT double CQDebugToolVersionNumber;
