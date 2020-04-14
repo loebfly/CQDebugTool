@@ -41,16 +41,36 @@
         
         self.fpsLabel = [[CQFPSLabel alloc] initWithFrame:CGRectMake(0, 20, 50, 20)];
         [self addSubview:self.fpsLabel];
+        
+        UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
+          
+        [self addGestureRecognizer:panGestureRecognizer];
     }
     return self;
 }
 
-- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    if (touches.count == 1) {
-        UITouch *touch = touches.anyObject;
-        CGPoint locationPoint = [touch locationInView:[UIApplication sharedApplication].delegate.window];
-        self.center = locationPoint;
+- (void)handlePan:(UIPanGestureRecognizer *)recognizer {
+    
+    CGPoint translation = [recognizer translationInView:[UIApplication sharedApplication].delegate.window];
+    
+    CGFloat centerX = recognizer.view.center.x + translation.x;
+    CGFloat centerY = recognizer.view.center.y + translation.y;
+    
+    if (centerX < self.bounds.size.width/2) {
+        centerX = self.bounds.size.width/2;
+    } else if (centerX > [UIScreen mainScreen].bounds.size.width - self.bounds.size.width/2) {
+        centerX = [UIScreen mainScreen].bounds.size.width - self.bounds.size.width/2;
     }
+    
+    if (centerY < self.bounds.size.height/2 + [UIApplication sharedApplication].statusBarFrame.size.height) {
+        centerY = self.bounds.size.height/2 + [UIApplication sharedApplication].statusBarFrame.size.height;
+    } else if (centerY > [UIScreen mainScreen].bounds.size.height - self.bounds.size.width/2) {
+        centerY = [UIScreen mainScreen].bounds.size.height - self.bounds.size.height/2;
+    }
+    
+    recognizer.view.center = CGPointMake(centerX,centerY);
+    
+    [recognizer setTranslation:CGPointZero inView:[UIApplication sharedApplication].delegate.window];
 }
 
 @end
