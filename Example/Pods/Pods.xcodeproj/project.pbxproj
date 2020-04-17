@@ -90,6 +90,8 @@
 		CDFD19569F910F4228ED4CB6B6619A13 /* CQControlFloatingBall.h in Headers */ = {isa = PBXBuildFile; fileRef = F846F7F66E070D296FAFF0CB96D3B71E /* CQControlFloatingBall.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D1009DBFC18A7C5AA61F5DA5DD793C77 /* NSMutableDictionary+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 845CEF6AA81CF63E3F027CC763F6CEEB /* NSMutableDictionary+BlocksKit.m */; };
 		D5A2207793C9F1F75A75509D95C1EC6A /* UIBarButtonItem+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = FFBF6F1D1687E5F5F9DA1478C38C88F1 /* UIBarButtonItem+BlocksKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D89924732449903800A9EBA8 /* CQWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = D89924712449903800A9EBA8 /* CQWindow.h */; };
+		D89924752449903F00A9EBA8 /* CQWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = D89924722449903800A9EBA8 /* CQWindow.m */; };
 		DA4D070061C75785941C593CF8D957D1 /* CQUrlContext.m in Sources */ = {isa = PBXBuildFile; fileRef = FF77554EF459C76DA2712D26E94D8038 /* CQUrlContext.m */; };
 		DA68CB1449E52B8327B3AA7C3E870D82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91F049A20EAD2CBA7C7346F18C8BBD2 /* Foundation.framework */; };
 		DCC430A691C1AD644CC1C0F667D8C9AB /* CQRequestLogViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E4A4F153013C75A229BE02F7D5B87409 /* CQRequestLogViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -144,7 +146,7 @@
 
 /* Begin PBXFileReference section */
 		0534331F2E31F23FACC8D9FAA729ACAF /* UIView+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+BlocksKit.m"; path = "BlocksKit/UIKit/UIView+BlocksKit.m"; sourceTree = "<group>"; };
-		08270E9E7943A402F3F2BCBA8D8ED967 /* CQDebugTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CQDebugTool.m; path = CQDebugTool/CQDebugTool.m; sourceTree = "<group>"; };
+		08270E9E7943A402F3F2BCBA8D8ED967 /* CQDebugTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CQDebugTool.m; sourceTree = "<group>"; };
 		095AE51271F669838E49F8F3E25F54C1 /* Pods-CQDebugTool_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CQDebugTool_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0C19CC2FF87F8680CBD4DD7F4CAEFAED /* NSTimer+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+BlocksKit.m"; path = "BlocksKit/Core/NSTimer+BlocksKit.m"; sourceTree = "<group>"; };
 		0C3F016515DCEFB5C7A940E9D2146E7F /* NSURLConnection+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLConnection+BlocksKit.h"; path = "BlocksKit/DynamicDelegate/Foundation/NSURLConnection+BlocksKit.h"; sourceTree = "<group>"; };
@@ -152,15 +154,15 @@
 		15466A17F8C95E77C30E64F2F09D38D7 /* CQDebugTool-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CQDebugTool-Info.plist"; sourceTree = "<group>"; };
 		1567F1924CD547B8BA50CDDD51E850A2 /* MFMessageComposeViewController+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MFMessageComposeViewController+BlocksKit.m"; path = "BlocksKit/MessageUI/MFMessageComposeViewController+BlocksKit.m"; sourceTree = "<group>"; };
 		1B1F20E57488AEBA45D0982EA408441F /* NSIndexSet+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSIndexSet+BlocksKit.h"; path = "BlocksKit/Core/NSIndexSet+BlocksKit.h"; sourceTree = "<group>"; };
-		1CE7FA0267A19A144B1DBE501EC8218F /* CQUrlContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CQUrlContext.h; path = CQDebugTool/CQUrlContext.h; sourceTree = "<group>"; };
-		21B29C0FA9CB3D82E71F854B951096E3 /* CQControlFloatingBall.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CQControlFloatingBall.m; path = CQDebugTool/CQControlFloatingBall.m; sourceTree = "<group>"; };
+		1CE7FA0267A19A144B1DBE501EC8218F /* CQUrlContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CQUrlContext.h; sourceTree = "<group>"; };
+		21B29C0FA9CB3D82E71F854B951096E3 /* CQControlFloatingBall.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CQControlFloatingBall.m; sourceTree = "<group>"; };
 		28111030E38E914F4532648C15DA292A /* BlocksKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BlocksKit-Info.plist"; sourceTree = "<group>"; };
 		2BFA9E9500E2B7117F0640F9DDA531BC /* NSDictionary+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+BlocksKit.h"; path = "BlocksKit/Core/NSDictionary+BlocksKit.h"; sourceTree = "<group>"; };
 		2F357C97BA7217A987D1F4E88EB7C7E8 /* NSArray+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+BlocksKit.m"; path = "BlocksKit/Core/NSArray+BlocksKit.m"; sourceTree = "<group>"; };
 		303277B60722327353CC4DF44C39792E /* NSMutableIndexSet+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableIndexSet+BlocksKit.m"; path = "BlocksKit/Core/NSMutableIndexSet+BlocksKit.m"; sourceTree = "<group>"; };
 		35E2BA5AA2C03F65037841D00BFE9E3F /* BlocksKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BlocksKit-dummy.m"; sourceTree = "<group>"; };
 		364F9264C97496DFD376E065B53BDE40 /* NSMutableSet+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableSet+BlocksKit.m"; path = "BlocksKit/Core/NSMutableSet+BlocksKit.m"; sourceTree = "<group>"; };
-		37579A4535B405EA6FAEF34DE8F860EC /* CQFPSLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CQFPSLabel.h; path = CQDebugTool/CQFPSLabel.h; sourceTree = "<group>"; };
+		37579A4535B405EA6FAEF34DE8F860EC /* CQFPSLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CQFPSLabel.h; sourceTree = "<group>"; };
 		3CA7F4028F4E78EDEC4689724D1DBCDD /* NSCache+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCache+BlocksKit.m"; path = "BlocksKit/DynamicDelegate/Foundation/NSCache+BlocksKit.m"; sourceTree = "<group>"; };
 		3DEFB694B0B5275577332EDDFA70E5AC /* Pods-CQDebugTool_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CQDebugTool_Example-umbrella.h"; sourceTree = "<group>"; };
 		3F7AE885D7CFFDA89EC4A0944FEDE98B /* UITextField+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+BlocksKit.m"; path = "BlocksKit/UIKit/UITextField+BlocksKit.m"; sourceTree = "<group>"; };
@@ -185,9 +187,9 @@
 		6799F4BEDA0D9451569E7D34F49504C7 /* Pods-CQDebugTool_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CQDebugTool_Tests.modulemap"; sourceTree = "<group>"; };
 		6947AD5D1707A41D85D5C8E185E7B313 /* CQDebugTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CQDebugTool-prefix.pch"; sourceTree = "<group>"; };
 		6D0F21DC0F68DB0178D3E586C98B0692 /* Pods-CQDebugTool_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CQDebugTool_Example.modulemap"; sourceTree = "<group>"; };
-		6EE09CB4555F32B6A5C031580E04CE15 /* CQDebugTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CQDebugTool.h; path = CQDebugTool/CQDebugTool.h; sourceTree = "<group>"; };
+		6EE09CB4555F32B6A5C031580E04CE15 /* CQDebugTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CQDebugTool.h; sourceTree = "<group>"; };
 		6F70BF603CE98579EE97E286801E741E /* BlocksKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BlocksKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		717B307A53DFA27FF7863686E6F8F3E1 /* CQFPSLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CQFPSLabel.m; path = CQDebugTool/CQFPSLabel.m; sourceTree = "<group>"; };
+		717B307A53DFA27FF7863686E6F8F3E1 /* CQFPSLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CQFPSLabel.m; sourceTree = "<group>"; };
 		736B884F4A24110D629818C8DD358719 /* Pods-CQDebugTool_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CQDebugTool_Tests-Info.plist"; sourceTree = "<group>"; };
 		73F29A6BCC244F49FD051CAA8B2A235F /* CQDebugTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CQDebugTool.release.xcconfig; sourceTree = "<group>"; };
 		73F35A967867E2395EA7EEABA7D00CDD /* UIAlertView+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+BlocksKit.m"; path = "BlocksKit/UIKit/UIAlertView+BlocksKit.m"; sourceTree = "<group>"; };
@@ -207,9 +209,9 @@
 		90C90100FEE4C652798E9775DDFBED1F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		91828FE9C4D1C0644380A6736561C836 /* UIPopoverController+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIPopoverController+BlocksKit.m"; path = "BlocksKit/UIKit/UIPopoverController+BlocksKit.m"; sourceTree = "<group>"; };
 		91FF9D104EA7C3CEAF25CE9501FFF199 /* BlocksKit+UIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "BlocksKit+UIKit.h"; path = "BlocksKit/BlocksKit+UIKit.h"; sourceTree = "<group>"; };
-		9317F402F0D4F66B696B9AC8316AE52E /* CQDebugStatusBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CQDebugStatusBar.m; path = CQDebugTool/CQDebugStatusBar.m; sourceTree = "<group>"; };
+		9317F402F0D4F66B696B9AC8316AE52E /* CQDebugStatusBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CQDebugStatusBar.m; sourceTree = "<group>"; };
 		96FA0E7F9286C36A01B48D285FE1097A /* MFMessageComposeViewController+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MFMessageComposeViewController+BlocksKit.h"; path = "BlocksKit/MessageUI/MFMessageComposeViewController+BlocksKit.h"; sourceTree = "<group>"; };
-		9734BF833C1B2F8528EF338530E55A53 /* CQNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CQNavigationController.m; path = CQDebugTool/CQNavigationController.m; sourceTree = "<group>"; };
+		9734BF833C1B2F8528EF338530E55A53 /* CQNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CQNavigationController.m; sourceTree = "<group>"; };
 		9C4438051273EBE62DB29B3B6A88DE36 /* NSMutableOrderedSet+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableOrderedSet+BlocksKit.h"; path = "BlocksKit/Core/NSMutableOrderedSet+BlocksKit.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E1953860F2839507E4DF85E06DB55AC /* NSObject+A2DynamicDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+A2DynamicDelegate.h"; path = "BlocksKit/DynamicDelegate/NSObject+A2DynamicDelegate.h"; sourceTree = "<group>"; };
@@ -232,45 +234,47 @@
 		C022F524CC6FA8CA6C1C61B7F4290B07 /* MFMailComposeViewController+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MFMailComposeViewController+BlocksKit.m"; path = "BlocksKit/MessageUI/MFMailComposeViewController+BlocksKit.m"; sourceTree = "<group>"; };
 		C2F5DA057143A79CD20D6CBF4B1A5C91 /* NSObject+A2DynamicDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+A2DynamicDelegate.m"; path = "BlocksKit/DynamicDelegate/NSObject+A2DynamicDelegate.m"; sourceTree = "<group>"; };
 		C2FC7E34260F6F1110A862BD5159AE6A /* NSMutableArray+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+BlocksKit.h"; path = "BlocksKit/Core/NSMutableArray+BlocksKit.h"; sourceTree = "<group>"; };
-		C2FC8D88E7067A076287DA1E9415909B /* CQDebugViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CQDebugViewController.h; path = CQDebugTool/CQDebugViewController.h; sourceTree = "<group>"; };
+		C2FC8D88E7067A076287DA1E9415909B /* CQDebugViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CQDebugViewController.h; sourceTree = "<group>"; };
 		C3DE79B684573FBC0E12103DC91FE571 /* BKMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BKMacros.h; path = BlocksKit/Core/BKMacros.h; sourceTree = "<group>"; };
 		C7528C67A4EA7363B81F6FECE1077516 /* UIWebView+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+BlocksKit.m"; path = "BlocksKit/UIKit/UIWebView+BlocksKit.m"; sourceTree = "<group>"; };
 		C8098D3B38B60A53AFADD1C398594A43 /* UIImagePickerController+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImagePickerController+BlocksKit.m"; path = "BlocksKit/UIKit/UIImagePickerController+BlocksKit.m"; sourceTree = "<group>"; };
 		C875B2F1B814A4507A1E8B4E6EAD440F /* Pods-CQDebugTool_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CQDebugTool_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		CA4C0477A4A5CCE44696A2AF67566724 /* NSSet+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSSet+BlocksKit.m"; path = "BlocksKit/Core/NSSet+BlocksKit.m"; sourceTree = "<group>"; };
 		CAEAFEA3F43E8EE9D9554FE3760E24DE /* BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BlocksKit.h; path = BlocksKit/BlocksKit.h; sourceTree = "<group>"; };
-		CB61D007528B823B0F1DF605BE349CAE /* CQRequestLogViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CQRequestLogViewController.m; path = CQDebugTool/CQRequestLogViewController.m; sourceTree = "<group>"; };
+		CB61D007528B823B0F1DF605BE349CAE /* CQRequestLogViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CQRequestLogViewController.m; sourceTree = "<group>"; };
 		CC050891F18BEA6023149A622F46CA7E /* CQDebugTool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CQDebugTool.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CD1330935BA344AF271B81FFFC2DC23F /* BlocksKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BlocksKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D193044DE33B5081172A920C77A426E6 /* Pods_CQDebugTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CQDebugTool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D32950DC279FB78ED2BF1F3942EE9119 /* NSObject+BKBlockObservation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+BKBlockObservation.h"; path = "BlocksKit/Core/NSObject+BKBlockObservation.h"; sourceTree = "<group>"; };
 		D38F1344E3F8FE2169EFF33655145075 /* NSMutableDictionary+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableDictionary+BlocksKit.h"; path = "BlocksKit/Core/NSMutableDictionary+BlocksKit.h"; sourceTree = "<group>"; };
 		D74EA2241370650F532E91E5DA45AF09 /* Pods-CQDebugTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CQDebugTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D89924712449903800A9EBA8 /* CQWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CQWindow.h; sourceTree = "<group>"; };
+		D89924722449903800A9EBA8 /* CQWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CQWindow.m; sourceTree = "<group>"; };
 		DA942F823198374210162662E9A51AED /* Pods-CQDebugTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CQDebugTool_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DD3E2264E285B4547C52A38D6A47E8DF /* NSOrderedSet+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSOrderedSet+BlocksKit.h"; path = "BlocksKit/Core/NSOrderedSet+BlocksKit.h"; sourceTree = "<group>"; };
-		DEFBAA8857803624007E27DE28784E1E /* CQDebugStatusBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CQDebugStatusBar.h; path = CQDebugTool/CQDebugStatusBar.h; sourceTree = "<group>"; };
+		DEFBAA8857803624007E27DE28784E1E /* CQDebugStatusBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CQDebugStatusBar.h; sourceTree = "<group>"; };
 		E16D4FF92E50FEE7B6D66D9176538248 /* Pods_CQDebugTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CQDebugTool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1AF993BAB3EFAFC78FC843A6046D4E8 /* CQDebugTool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CQDebugTool.modulemap; sourceTree = "<group>"; };
 		E21A4D70E462CF4F8DB65A5680977F1D /* UIWebView+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+BlocksKit.h"; path = "BlocksKit/UIKit/UIWebView+BlocksKit.h"; sourceTree = "<group>"; };
-		E2BB37D67932D1AD1EE300F317916E8D /* UIViewController+CQDealloc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+CQDealloc.h"; path = "CQDebugTool/UIViewController+CQDealloc.h"; sourceTree = "<group>"; };
-		E4A4F153013C75A229BE02F7D5B87409 /* CQRequestLogViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CQRequestLogViewController.h; path = CQDebugTool/CQRequestLogViewController.h; sourceTree = "<group>"; };
+		E2BB37D67932D1AD1EE300F317916E8D /* UIViewController+CQDealloc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CQDealloc.h"; sourceTree = "<group>"; };
+		E4A4F153013C75A229BE02F7D5B87409 /* CQRequestLogViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CQRequestLogViewController.h; sourceTree = "<group>"; };
 		E58748A509F637E4D9ABA213ADB5B392 /* NSURLConnection+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLConnection+BlocksKit.m"; path = "BlocksKit/DynamicDelegate/Foundation/NSURLConnection+BlocksKit.m"; sourceTree = "<group>"; };
-		E64F0292756BFD340A18CE5933D1E4E4 /* UIViewController+CQDealloc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+CQDealloc.m"; path = "CQDebugTool/UIViewController+CQDealloc.m"; sourceTree = "<group>"; };
+		E64F0292756BFD340A18CE5933D1E4E4 /* UIViewController+CQDealloc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CQDealloc.m"; sourceTree = "<group>"; };
 		E798B52CE6D9C2C3A6AA3C1FD6F5F92F /* BlocksKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlocksKit-prefix.pch"; sourceTree = "<group>"; };
 		E9F76369B546592681BE897899F6D467 /* NSDictionary+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+BlocksKit.m"; path = "BlocksKit/Core/NSDictionary+BlocksKit.m"; sourceTree = "<group>"; };
 		EC0E8C7BD8F6ED0EA8BD74E6CDE8CB2F /* NSMutableSet+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableSet+BlocksKit.h"; path = "BlocksKit/Core/NSMutableSet+BlocksKit.h"; sourceTree = "<group>"; };
-		EF3E19DDBD2F35A856D125D1562483B8 /* CQDebugViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CQDebugViewController.m; path = CQDebugTool/CQDebugViewController.m; sourceTree = "<group>"; };
+		EF3E19DDBD2F35A856D125D1562483B8 /* CQDebugViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CQDebugViewController.m; sourceTree = "<group>"; };
 		F132E05D5C28A17E78DB6D603E54F537 /* NSMutableIndexSet+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableIndexSet+BlocksKit.h"; path = "BlocksKit/Core/NSMutableIndexSet+BlocksKit.h"; sourceTree = "<group>"; };
 		F1703D0DE554DB0430D1C8AC56382894 /* Pods-CQDebugTool_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CQDebugTool_Example-dummy.m"; sourceTree = "<group>"; };
 		F1DFB05F3829BC1E4289C1B25525D7A6 /* A2BlockInvocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A2BlockInvocation.h; path = BlocksKit/DynamicDelegate/A2BlockInvocation.h; sourceTree = "<group>"; };
 		F22C1B536D8A8297542F1EC696C8FEC8 /* UIActionSheet+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActionSheet+BlocksKit.h"; path = "BlocksKit/UIKit/UIActionSheet+BlocksKit.h"; sourceTree = "<group>"; };
 		F4FD8A157BFD5154DB580DC2231C642B /* Pods-CQDebugTool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CQDebugTool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F846F7F66E070D296FAFF0CB96D3B71E /* CQControlFloatingBall.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CQControlFloatingBall.h; path = CQDebugTool/CQControlFloatingBall.h; sourceTree = "<group>"; };
+		F846F7F66E070D296FAFF0CB96D3B71E /* CQControlFloatingBall.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CQControlFloatingBall.h; sourceTree = "<group>"; };
 		F9A989A5AC42BCA8F97CE5452FEACD98 /* BlocksKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BlocksKit.debug.xcconfig; sourceTree = "<group>"; };
 		F9D1590DDDA2239FAB826A837358F1D4 /* UIBarButtonItem+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+BlocksKit.m"; path = "BlocksKit/UIKit/UIBarButtonItem+BlocksKit.m"; sourceTree = "<group>"; };
 		FB513DC9B3638C9E7012D34C6928A09F /* BlocksKit+MessageUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "BlocksKit+MessageUI.h"; path = "BlocksKit/BlocksKit+MessageUI.h"; sourceTree = "<group>"; };
-		FDE7DF489EF6D6243BE24D7C78A554C5 /* CQNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CQNavigationController.h; path = CQDebugTool/CQNavigationController.h; sourceTree = "<group>"; };
-		FF77554EF459C76DA2712D26E94D8038 /* CQUrlContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CQUrlContext.m; path = CQDebugTool/CQUrlContext.m; sourceTree = "<group>"; };
+		FDE7DF489EF6D6243BE24D7C78A554C5 /* CQNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CQNavigationController.h; sourceTree = "<group>"; };
+		FF77554EF459C76DA2712D26E94D8038 /* CQUrlContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CQUrlContext.m; sourceTree = "<group>"; };
 		FF7F8E73D0B9D1E9A3C0D0FC7968084D /* UIControl+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+BlocksKit.m"; path = "BlocksKit/UIKit/UIControl+BlocksKit.m"; sourceTree = "<group>"; };
 		FFBF6F1D1687E5F5F9DA1478C38C88F1 /* UIBarButtonItem+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+BlocksKit.h"; path = "BlocksKit/UIKit/UIBarButtonItem+BlocksKit.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -409,24 +413,8 @@
 		39B44EFFA3504A6C82748F103C8AD93A /* CQDebugTool */ = {
 			isa = PBXGroup;
 			children = (
-				F846F7F66E070D296FAFF0CB96D3B71E /* CQControlFloatingBall.h */,
-				21B29C0FA9CB3D82E71F854B951096E3 /* CQControlFloatingBall.m */,
-				DEFBAA8857803624007E27DE28784E1E /* CQDebugStatusBar.h */,
-				9317F402F0D4F66B696B9AC8316AE52E /* CQDebugStatusBar.m */,
-				6EE09CB4555F32B6A5C031580E04CE15 /* CQDebugTool.h */,
-				08270E9E7943A402F3F2BCBA8D8ED967 /* CQDebugTool.m */,
-				C2FC8D88E7067A076287DA1E9415909B /* CQDebugViewController.h */,
-				EF3E19DDBD2F35A856D125D1562483B8 /* CQDebugViewController.m */,
-				37579A4535B405EA6FAEF34DE8F860EC /* CQFPSLabel.h */,
-				717B307A53DFA27FF7863686E6F8F3E1 /* CQFPSLabel.m */,
-				FDE7DF489EF6D6243BE24D7C78A554C5 /* CQNavigationController.h */,
-				9734BF833C1B2F8528EF338530E55A53 /* CQNavigationController.m */,
-				E4A4F153013C75A229BE02F7D5B87409 /* CQRequestLogViewController.h */,
-				CB61D007528B823B0F1DF605BE349CAE /* CQRequestLogViewController.m */,
-				1CE7FA0267A19A144B1DBE501EC8218F /* CQUrlContext.h */,
-				FF77554EF459C76DA2712D26E94D8038 /* CQUrlContext.m */,
-				E2BB37D67932D1AD1EE300F317916E8D /* UIViewController+CQDealloc.h */,
-				E64F0292756BFD340A18CE5933D1E4E4 /* UIViewController+CQDealloc.m */,
+				D899246E24498E8500A9EBA8 /* DebugTool */,
+				D899246D24498E7500A9EBA8 /* Core */,
 				4BB1DDB633BA5A191452A67EA16C5ED9 /* Pod */,
 				B869400F6545FB12639081AD0F5FAAA1 /* Support Files */,
 			);
@@ -590,6 +578,72 @@
 			);
 			sourceTree = "<group>";
 		};
+		D899246D24498E7500A9EBA8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D899246F24498F2C00A9EBA8 /* UI */,
+				F846F7F66E070D296FAFF0CB96D3B71E /* CQControlFloatingBall.h */,
+				21B29C0FA9CB3D82E71F854B951096E3 /* CQControlFloatingBall.m */,
+				DEFBAA8857803624007E27DE28784E1E /* CQDebugStatusBar.h */,
+				9317F402F0D4F66B696B9AC8316AE52E /* CQDebugStatusBar.m */,
+				37579A4535B405EA6FAEF34DE8F860EC /* CQFPSLabel.h */,
+				717B307A53DFA27FF7863686E6F8F3E1 /* CQFPSLabel.m */,
+				C2FC8D88E7067A076287DA1E9415909B /* CQDebugViewController.h */,
+				EF3E19DDBD2F35A856D125D1562483B8 /* CQDebugViewController.m */,
+				FDE7DF489EF6D6243BE24D7C78A554C5 /* CQNavigationController.h */,
+				9734BF833C1B2F8528EF338530E55A53 /* CQNavigationController.m */,
+				E4A4F153013C75A229BE02F7D5B87409 /* CQRequestLogViewController.h */,
+				CB61D007528B823B0F1DF605BE349CAE /* CQRequestLogViewController.m */,
+				1CE7FA0267A19A144B1DBE501EC8218F /* CQUrlContext.h */,
+				FF77554EF459C76DA2712D26E94D8038 /* CQUrlContext.m */,
+				E2BB37D67932D1AD1EE300F317916E8D /* UIViewController+CQDealloc.h */,
+				E64F0292756BFD340A18CE5933D1E4E4 /* UIViewController+CQDealloc.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D899246E24498E8500A9EBA8 /* DebugTool */ = {
+			isa = PBXGroup;
+			children = (
+				6EE09CB4555F32B6A5C031580E04CE15 /* CQDebugTool.h */,
+				08270E9E7943A402F3F2BCBA8D8ED967 /* CQDebugTool.m */,
+			);
+			path = DebugTool;
+			sourceTree = "<group>";
+		};
+		D899246F24498F2C00A9EBA8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D89924782449907F00A9EBA8 /* ViewController */,
+				D89924762449907100A9EBA8 /* View */,
+				D899247024498F4C00A9EBA8 /* Window */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D899247024498F4C00A9EBA8 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				D89924712449903800A9EBA8 /* CQWindow.h */,
+				D89924722449903800A9EBA8 /* CQWindow.m */,
+			);
+			path = Window;
+			sourceTree = "<group>";
+		};
+		D89924762449907100A9EBA8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D89924782449907F00A9EBA8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -598,6 +652,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6938EB250AC4FFEEB5742774611DD6EA /* A2BlockInvocation.h in Headers */,
+				D89924732449903800A9EBA8 /* CQWindow.h in Headers */,
 				3E3DA676422D280011B10B926E71A038 /* A2DynamicDelegate.h in Headers */,
 				2EDB7DCAFC7D09DEB062E0A014054F58 /* BKMacros.h in Headers */,
 				107146C35E8EB7CFD486CB7313D7F843 /* BlocksKit+MessageUI.h in Headers */,
@@ -826,6 +881,7 @@
 				2C42CCB2BD484409FCFBED4C6C7BE00F /* CQRequestLogViewController.m in Sources */,
 				DA4D070061C75785941C593CF8D957D1 /* CQUrlContext.m in Sources */,
 				78D20A4B4497C52B1A621231588D8965 /* UIViewController+CQDealloc.m in Sources */,
+				D89924752449903F00A9EBA8 /* CQWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -30,9 +30,18 @@
 }
 
 - (void)run {
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [CQControlFloatingBall shareBall];
     });
+    
+//    if (![[NSThread currentThread] isMainThread]) {
+//        dispatch_sync(dispatch_get_main_queue(), ^{
+//            [[CQControlFloatingBall shareBall] makeKeyWindow];
+//        });
+//        return;
+//    }
+    
+//    [[CQControlFloatingBall shareBall] makeKeyWindow];
 }
 
 - (void)setDelegate:(id<CQDebugToolDelegate>)delegate {

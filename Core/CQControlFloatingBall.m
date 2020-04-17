@@ -22,36 +22,32 @@
    #ifdef DEBUG
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        ball = [[CQControlFloatingBall alloc] init];
+        ball = [[CQControlFloatingBall alloc] initWithFrame:[UIScreen mainScreen].bounds];
     });
     #endif
     return ball;
 }
 
-- (instancetype)init
+- (instancetype)initWithFrame:(CGRect)frame
 {
-    self = [super init];
+    self = [super initWithFrame:frame];
     if (self) {
-        self.frame = CGRectMake(0, 100, 50, 50);
-        self.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.7];
-        self.layer.cornerRadius = 25;
-        self.layer.masksToBounds = YES;
-        self.windowLevel = UIWindowLevelStatusBar + 2;
+        UIViewController *rootVC = [[UIViewController alloc] init];
+        rootVC.view.backgroundColor = [UIColor redColor];
+        self.frame = CGRectMake(0, 50, 50, 50);
+        self.rootViewController = rootVC;
         self.hidden = NO;
         
-        self.fpsLabel = [[CQFPSLabel alloc] initWithFrame:CGRectMake(0, 20, 50, 20)];
-        [self addSubview:self.fpsLabel];
-        
         UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
-          
-        [self addGestureRecognizer:panGestureRecognizer];
+                 
+               [self addGestureRecognizer:panGestureRecognizer];
     }
     return self;
 }
 
 - (void)handlePan:(UIPanGestureRecognizer *)recognizer {
     
-    CGPoint translation = [recognizer translationInView:[UIApplication sharedApplication].delegate.window];
+    CGPoint translation = [recognizer translationInView:recognizer.view];
     
     CGFloat centerX = recognizer.view.center.x + translation.x;
     CGFloat centerY = recognizer.view.center.y + translation.y;
@@ -70,7 +66,7 @@
     
     recognizer.view.center = CGPointMake(centerX,centerY);
     
-    [recognizer setTranslation:CGPointZero inView:[UIApplication sharedApplication].delegate.window];
+    [recognizer setTranslation:CGPointZero inView:recognizer.view];
 }
 
 @end

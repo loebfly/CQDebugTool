@@ -8,7 +8,9 @@
 
 #import "CQViewController.h"
 #import "CQDeallocTestViewController.h"
-@interface CQViewController ()
+@interface CQViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic, strong) UITableView *table;
 
 @end
 
@@ -18,25 +20,56 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.title = @"Demo";
     self.view.backgroundColor = [UIColor whiteColor];
-    
-//    UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
-//    label.text = @"摇晃手机试试";
-//    label.textAlignment = NSTextAlignmentCenter;
-//    label.font = [UIFont systemFontOfSize:40];
-//    label.textColor = [UIColor blackColor];
-//    label.center = self.view.center;
-//    label.bounds = CGRectMake(0, 0, self.view.bounds.size.width, 100);
-//    [self.view addSubview:label];
-    
-    UIButton *button = [UIButton buttonWithType:(UIButtonTypeSystem)];
-    button.backgroundColor = [UIColor lightGrayColor];
-    [button setTitle:@"点击测试VC释放" forState:(UIControlStateNormal)];
-    [button setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
-    button.center = CGPointMake(self.view.center.x, 120);
-    button.bounds = CGRectMake(0, 0, self.view.bounds.size.width, 50);
-    [button addTarget:self action:@selector(pushDeallocVC)  forControlEvents:(UIControlEventTouchUpInside)];
-    [self.view addSubview:button];
+    UITableView *table = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+    table.backgroundColor = [UIColor whiteColor];
+    table.delegate = self;
+    table.dataSource = self;
+    table.separatorStyle = UITableViewCellSeparatorStyleNone;
+    table.sectionIndexBackgroundColor = [UIColor clearColor];
+    if (@available(iOS 11.0, *)) {
+        table.contentInsetAdjustmentBehavior = UIApplicationBackgroundFetchIntervalNever;
+    } else {
+        // Fallback on earlier versions
+    }
+    [self.view addSubview:self.table = table];
+    table.translatesAutoresizingMaskIntoConstraints = NO;
+}
+
+- (void)updateViewConstraints {
+    [self.view addConstraints:@[
+        [NSLayoutConstraint constraintWithItem:self.table attribute:(NSLayoutAttributeLeading) relatedBy:(NSLayoutRelationEqual) toItem:self.view attribute:(NSLayoutAttributeLeading) multiplier:1.0 constant:0],
+        
+        [NSLayoutConstraint constraintWithItem:self.table attribute:(NSLayoutAttributeTop) relatedBy:(NSLayoutRelationEqual) toItem:self.view attribute:(NSLayoutAttributeTop) multiplier:1.0 constant:self.navigationController.navigationBar.bounds.size.height + [UIApplication sharedApplication].statusBarFrame.size.height],
+        
+        [NSLayoutConstraint constraintWithItem:self.table attribute:(NSLayoutAttributeBottom) relatedBy:(NSLayoutRelationEqual) toItem:self.view attribute:(NSLayoutAttributeBottom) multiplier:1.0 constant:0],
+        
+        [NSLayoutConstraint constraintWithItem:self.table attribute:(NSLayoutAttributeTrailing) relatedBy:(NSLayoutRelationEqual) toItem:self.view attribute:(NSLayoutAttributeTrailing) multiplier:1.0 constant:0],
+    ]];
+    [super updateViewConstraints];
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"debugCell"];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:@"debugCell"];
+    }
+    cell.textLabel.text = @"测试VC释放";
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self pushDeallocVC];
 }
 
 - (void)pushDeallocVC {

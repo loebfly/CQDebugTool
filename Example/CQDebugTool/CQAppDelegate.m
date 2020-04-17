@@ -18,15 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-    //用标识决定window
-//    BOOL isAppStoreChannel = NO;
-//    if (!isAppStoreChannel) {
-//        self.window = [[CQDebugTool debugInstance] debugWindow];
-//        [CQDebugTool debugInstance].delegate = self;
-//    } else {
-        self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-//    }
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [[CQDebugTool debugInstance] appendRequestLog:@"ABCDEFGHIJKL"];
     [CQDebugTool debugInstance].deallocMessageShow = YES;
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[CQViewController alloc] init]];

@@ -17,23 +17,17 @@
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
-    if (CGRectEqualToRect(frame, CGRectZero)) {
-        frame.size = kFPSLabelSize;
-        frame.origin = CGPointMake(CGRectGetWidth([[UIScreen mainScreen] bounds]) / 2 - 25, [UIApplication sharedApplication].statusBarFrame.size.height + 24);
-    }
     
     self = [super initWithFrame:frame];
-    
-    self.layer.cornerRadius = 5;
-    self.clipsToBounds = YES;
-    self.textAlignment = NSTextAlignmentCenter;
-    self.userInteractionEnabled = NO;
-    self.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.7];
-    self.font = [UIFont systemFontOfSize:12];
-    
-    
-    _link = [CADisplayLink displayLinkWithTarget:self selector:@selector(tick:)];
-    [_link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
+    if (self) {
+        self.layer.cornerRadius = 5;
+        self.clipsToBounds = YES;
+        self.textAlignment = NSTextAlignmentCenter;
+        self.userInteractionEnabled = NO;
+        self.font = [UIFont systemFontOfSize:12];
+        _link = [CADisplayLink displayLinkWithTarget:self selector:@selector(tick:)];
+        [_link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
+    }
     return self;
 }
 
